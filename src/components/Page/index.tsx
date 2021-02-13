@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { ModelsWrapper, ModelSection } from "../Models";
+
 import DefaultOverlayContent from '../DefaultOverlayContent';
 
 import { Container } from './styles';
@@ -8,7 +11,8 @@ const Page: React.FC = () => {
     <Container>
       <ModelsWrapper>
         <div>
-          <ModelSection 
+          <ModelSection
+            className="colored"
             modelName="Model One"
             overlayNode={
               <DefaultOverlayContent 
